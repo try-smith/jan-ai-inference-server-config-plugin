@@ -15,7 +15,7 @@ if [ "$1" = "start" ]; then
     echo "$(date): triggered" > /tmp/jan-debug.log
     API_KEY=$(security find-generic-password -a "jan-api" -s "jan-api-key" -w 2>/dev/null)
     if [ -z "$API_KEY" ]; then
-        osascript -e 'display alert "Jan API" message "API key not found in Keychain.\nRun setup-jan-api-key.sh first."'
+        osascript -e 'display alert "Jan API" message "API key not found in Keychain.\nRun setup-jan-api-key.command first."'
         exit 1
     fi
     # Starts detached so it survives after SwiftBar's shell exits
