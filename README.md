@@ -1,4 +1,4 @@
-# Local AI Inference Server for jan.ai & llama.cpp Documentation
+# Local AI Inference Server for jan.ai & llama.cpp (MacOS) Documentation
 
 This plugin was primarily made to make managing your Jan AI Inference local servers easier. It 
 is possible to manage an local model server via the Jan app, but if you want to minimize your memory footprint
